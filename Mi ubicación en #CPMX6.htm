@@ -1,0 +1,76 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mi ubicación en #CPMX6 </title>
+<script src="Mi%20ubicaci%C3%B3n%20en%20%23CPMX6%20Archivos/analytics.js" async=""></script><script src="Mi%20ubicaci%C3%B3n%20en%20%23CPMX6%20Archivos/widgets.js" id="twitter-wjs"></script><script src="Mi%20ubicaci%C3%B3n%20en%20%23CPMX6%20Archivos/jquery-2.js"></script>
+<script>
+    jQuery(document).ready(function()
+        {
+            
+            $('#mapa_principal').click(function(e) 
+                {
+                    var offset = $(this).offset();
+                    izq = e.clientX - offset.left;
+                    arr = e.clientY - offset.top;
+                    izq = izq-20;
+                    arr = arr-35;				
+                    $(location).attr('href', '?t='+arr+'&i='+izq);
+                    
+                    //alert(e.clientX - offset.left);
+                    //alert(e.clientY - offset.top);
+                });	
+        });
+    </script>
+	<style type="text/css"> 
+        body
+        {
+          margin: 0;
+          padding: 0;
+		  font-family:Verdana, Geneva, sans-serif;
+		  
+        }
+		.divTitulo
+		{
+			text-align:center;
+			height:25px;
+			padding-top:10px;
+		}
+		.divPie
+		{
+			text-align:center;
+			font-size:12px;
+			padding-top:10px;
+		}
+		.divTwitter
+		{
+			text-align:center;
+		}
+        </style>
+
+
+<script src="Mi%20ubicaci%C3%B3n%20en%20%23CPMX6%20Archivos/button.js" async="" charset="utf-8" type="text/javascript"></script></head>
+<body>	
+<img style="z-index: 1;" id="mapa_principal" src="Mi%20ubicaci%C3%B3n%20en%20%23CPMX6%20Archivos/cpmx.jpg">
+
+
+<div class="divTwitter">Compartir con Twitter
+		
+		<iframe data-url="http://miubicacion.org/" src="Mi%20ubicaci%C3%B3n%20en%20%23CPMX6%20Archivos/tweet_button.htm" title="Twitter Tweet Button" style="position: static; visibility: visible; width: 89px; height: 28px;" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>		
+			</div><div class="divPie"> Mi Ubicación de Campus Party México 2015 by Comunidad de PHP  twitter 
+<a href="https://twitter.com/ComunidadDePHP" target="_blank">
+@ComunidadDePHP
+</a>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52242419-1', 'miubicacion.org');
+  ga('send', 'pageview');
+
+</script>
+
+</body></html>
